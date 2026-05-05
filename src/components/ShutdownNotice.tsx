@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const ShutdownNotice = () => {
-  const [countdown, setCountdown] = useState(15);
+  const [countdown, setCountdown] = useState(5);
   const targetUrl = "https://tqmaster.vercel.app/";
 
   useEffect(() => {
@@ -39,13 +39,9 @@ export const ShutdownNotice = () => {
           </div>
         </div>
         
-        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300 mb-4 tracking-tight drop-shadow-md">
-          Chuyển Nhà Mới!
+        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300 mb-8 tracking-tight drop-shadow-md">
+          Chuyển sang web mới đi!
         </h1>
-        
-        <p className="text-gray-200 text-lg md:text-xl mb-8 leading-relaxed font-medium">
-          Website này đã chính thức ngừng hoạt động. Mọi tính năng, dịch vụ và dữ liệu đã được nâng cấp và chuyển sang hệ thống mới.
-        </p>
         
         <a 
           href={targetUrl}
