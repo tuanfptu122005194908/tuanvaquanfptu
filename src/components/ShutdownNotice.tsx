@@ -26,7 +26,7 @@ export const ShutdownNotice = () => {
       <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] rounded-full bg-violet-600/30 blur-[120px] animate-pulse delay-1000"></div>
 
       <div className="relative bg-white/10 backdrop-blur-2xl border border-white/20 p-8 md:p-12 rounded-3xl shadow-2xl max-w-lg w-[90%] text-center transform transition-all hover:scale-[1.02] overflow-hidden">
-        
+
         {/* Shimmer effect */}
         <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent animate-[shimmer_2s_infinite]"></div>
 
@@ -38,12 +38,12 @@ export const ShutdownNotice = () => {
             </svg>
           </div>
         </div>
-        
+
         <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300 mb-8 tracking-tight drop-shadow-md">
-          Chuyển sang web mới đi!
+          Xin hãy chuyển sang web mới nhé!!!
         </h1>
-        
-        <a 
+
+        <a
           href={targetUrl}
           className="relative inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 text-lg font-bold text-white transition-all duration-300 bg-gradient-to-r from-pink-500 to-violet-600 rounded-full shadow-[0_0_20px_rgba(236,72,153,0.4)] hover:shadow-[0_0_30px_rgba(236,72,153,0.6)] hover:from-pink-400 hover:to-violet-500 hover:-translate-y-1 ring-2 ring-white/20 ring-offset-2 ring-offset-black/50 overflow-hidden group"
         >
@@ -55,12 +55,12 @@ export const ShutdownNotice = () => {
             </svg>
           </span>
         </a>
-        
+
         <div className="mt-8 text-sm text-gray-400 font-medium bg-black/30 rounded-full py-2 px-4 inline-block">
           Đang tự động chuyển hướng sau <span className="text-pink-400 font-bold">{countdown}</span> giây...
         </div>
       </div>
-      
+
       <style>{`
         @keyframes shimmer {
           100% { transform: translateX(100%); }
